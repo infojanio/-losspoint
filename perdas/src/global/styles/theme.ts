@@ -1,6 +1,6 @@
 export default {
     colors: {
-        primary: '#50C2C9',
+        primary: '#B5D1EB',
         primary_ligth: 'rgba(80, 194, 201, 0.3)',
 
         secundary: '#ff872c', //https://www.rapidtables.com/convert/color/index.html <- site para converter cor em rgba

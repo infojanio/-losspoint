@@ -1,15 +1,26 @@
-import styled from 'styled-components/native';
+import { RFValue } from 'react-native-responsive-fontsize';
+import styled, { useTheme } from 'styled-components/native';
 
 export const Container = styled.View`
 flex: 1;
-justify-content: center;
+background-color: #ffff;
+`
+
+export const Header = styled.View`
+width: 100%;
+height: ${RFValue(90)}px;
+justify-content: flex-end;
 align-items: center;
 
-background-color: #9999;
+padding-bottom: 19px;
 `
 export const Title = styled.Text`
-color: purple;
-font-size: 20px;
+font-size: ${RFValue(12)}px;
+font-family: Verdana;
+font-style: normal;
+
+justify-content: center;
+align-items: center;
 font-weight: bold;
 `
 
