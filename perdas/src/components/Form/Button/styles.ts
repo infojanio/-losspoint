@@ -3,15 +3,16 @@ import { TouchableOpacity } from 'react-native'
 import { RFValue } from 'react-native-responsive-fontsize'
 
 export const Container = styled(TouchableOpacity)`
-  width: 100%;
-  background-color: ${({ theme }) => theme.colors.secundary};
+  width: 50%;
+  background-color: #50C2C9;
   border-radius: 5px;
   align-items: center;
-  padding: 18px;
+  padding: 10px;
 `
 
 export const Title = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.medium};
+  font-family: Verdana;;
   font-size: ${RFValue(14)}px;
-  color: ${({ theme }) => theme.colors.shape};
+  color: #ffffff;
+  font-weight: bold;
 `

@@ -8,22 +8,26 @@ background-color: #ffff;
 
 export const Header = styled.View`
 width: 100%;
-height: ${RFValue(90)}px;
-justify-content: flex-end;
-align-items: center;
 
-padding-bottom: 19px;
+justify-content: first baseline;
+align-items: center;
+background-color: #ffff;
+padding: 0px 16px;
 `
 export const Title = styled.Text`
-font-size: ${RFValue(12)}px;
+font-size: ${RFValue(14)}px;
 font-family: Verdana;
+color: #000000;
 font-style: normal;
-
-justify-content: center;
-align-items: center;
 font-weight: bold;
 `
-
+export const Form = styled.View`
+  flex: 1;
+  width: 100%;
+  padding: 24px;
+  justify-content: space-between;
+`
+export const Fields = styled.View``
 
 
 
