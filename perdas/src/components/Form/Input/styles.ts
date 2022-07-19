@@ -11,4 +11,5 @@ export const Container = styled(TextInput)`
   background-color: #B5D1EB; 
   border-radius: 5px;
   margin-bottom: 8px;
+  
 `

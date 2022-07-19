@@ -15,6 +15,7 @@ import {
 import theme from './src/global/styles/theme'
 import { Dashboard } from './src/screens/Dashboard'
 import { Register } from './src/screens/Register'
+import Splash from './src/screens/Splash'
 //import { NavigationContainer } from '@react-navigation/native'
 //import { AppRoutes } from './src/routes/app.routes'
 //import AppLoading from 'expo-app-loading'
@@ -29,7 +30,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Dashboard/>
+      <Splash/>
 
     </ThemeProvider>
   )
