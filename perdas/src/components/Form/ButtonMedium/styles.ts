@@ -3,10 +3,10 @@ import { TouchableOpacity } from 'react-native'
 import { RFValue } from 'react-native-responsive-fontsize'
 
 export const Container = styled(TouchableOpacity)`
-  width: 90%;
-  height: 50%;
+  width: 80%;
+  height: 35%;
   background-color: #50c2c9;
-  border-radius: 5px;
+  border-radius: 8px;
   align-items: center;
   padding: 10px;
 `

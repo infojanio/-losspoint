@@ -16,7 +16,7 @@ export const TitleWrapper = styled.View`
   align-items: center;
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 47px;
+  margin-bottom: 10px;
 `
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
@@ -34,8 +34,8 @@ export const SubTitle = styled.Text`
   font-family: ${({ theme }) => theme.fonts.regular};
   color: ${({ theme }) => theme.colors.title};
 
-  font-size: ${RFValue(18)}px;
-  margin-bottom: 10px;
+  font-size: ${RFValue(16)}px;
+  margin-bottom: 15px;
 `
 export const SubLogo = styled.View`
   justify-content: center;
