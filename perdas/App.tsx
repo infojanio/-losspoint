@@ -30,15 +30,13 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Splash/>
-
+      <Splash />
     </ThemeProvider>
   )
 }
 
-
-  //se a fonte ainda não foi carregada, vai pra tela de loading..
- /*
+//se a fonte ainda não foi carregada, vai pra tela de loading..
+/*
   if (!fontsLoaded) {
     return <AppLoading />
   }
