@@ -1,11 +1,20 @@
 import * as React from 'react'
-import { Text, View, StyleSheet, Image } from 'react-native'
+
 import { Logo } from '../../components/Logo'
-import { Button } from '../../components/Form/Button'
-import LogoSvg from '../../assets/torneira/logo.svg'
+import { ButtonMedium } from '../../components/Form/ButtonMedium'
+
+import LogoSvg from '../../assets/torneira/torneira.svg'
+import LogoSvg2 from '../../assets/logo/logo.svg'
 import { RFValue } from 'react-native-responsive-fontsize'
 
-import { TitleWrapper, Title, Container, SubTitle, ButtonNext } from './styles'
+import {
+  TitleWrapper,
+  Title,
+  Container,
+  SubTitle,
+  ButtonNext,
+  SubLogo,
+} from './styles'
 
 export default function Splash() {
   function handleNext() {
@@ -25,13 +34,16 @@ export default function Splash() {
         </Title>
       </TitleWrapper>
 
-      <SubTitle>
-        Utilize o aplicativo para enviar{'\n'}a localização de vazamentos de
-        água.
-      </SubTitle>
+      <SubLogo>
+        <SubTitle>
+          Utilize o aplicativo para nos enviar a localização do vazamento de
+          água.
+        </SubTitle>
+        <LogoSvg2 width={RFValue(160)} height={RFValue(160)} />
+      </SubLogo>
 
       <ButtonNext>
-        <Button title="Próximo" onPress={handleNext} />
+        <ButtonMedium title="Próximo" onPress={handleNext} />
       </ButtonNext>
     </Container>
   )
