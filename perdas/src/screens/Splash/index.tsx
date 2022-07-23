@@ -29,8 +29,8 @@ export default function Splash() {
         <LogoSvg width={RFValue(160)} height={RFValue(160)} />
 
         <Title>
-          Combate às perdas {'\n'}
-          de água na distribuição.
+          Combata às perdas {'\n'}
+          de água na distribuição!
         </Title>
       </TitleWrapper>
 
