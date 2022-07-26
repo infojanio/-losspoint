@@ -4,15 +4,14 @@ import { RFValue } from 'react-native-responsive-fontsize'
 
 export const Container = styled(TextInput)`
   flex: 1;
-  width: 100%;
-  height: 12%;
-  padding: 18px 18px;
+
+  padding: 22px 22px;
   border-radius: 5px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   font-size: ${RFValue(16)}px;
   font-family: ${({ theme }) => theme.fonts.medium};
   color: ${({ theme }) => theme.colors.text};
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary_ligth};
 `

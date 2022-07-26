@@ -18,8 +18,21 @@ import { RFValue } from 'react-native-responsive-fontsize'
 import { Button } from '../../components/Form/Button'
 
 import LogoSvg from '../../assets/torneira/torneira.svg'
+import { ButtonMedium } from '../../components/Form/ButtonMedium'
 
 export function Register() {
+  function handleRegister() {
+    const data = {
+      name,
+      matricula,
+      email,
+      senha,
+      confirmacao,
+      whatssap,
+    }
+    console.log(data)
+  }
+
   return (
     <Container>
       <Header>
@@ -32,21 +45,24 @@ export function Register() {
       </TitleWrapper>
 
       <Form>
-        <Input placeholder="Nome">
-          <Icon name="chevron-left" size={18} color="#fff" />
-        </Input>
+        <Fields>
+          <Input placeholder="Nome">
+            <Icon name="chevron-left" size={18} color="#fff" />
+          </Input>
 
-        <Input placeholder="Matrícula" />
+          <Input placeholder="Matrícula" />
 
-        <Input placeholder="Email">
-          <Icon name="mail" size={18} color="#fff" />
-        </Input>
+          <Input placeholder="Email">
+            <Icon name="mail" size={18} color="#fff" />
+          </Input>
 
-        <Input placeholder="Senha" />
-        <Input placeholder="Confirmar senha" />
-        <Input placeholder="Whatssap" />
+          <Input placeholder="Senha" />
+          <Input placeholder="Confirmar senha" />
+          <Input placeholder="Whatssap" />
+        </Fields>
+
+        <ButtonMedium title="Enviar" onPress={handleRegister} />
       </Form>
-      <Footer />
     </Container>
   )
 }
